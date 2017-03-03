@@ -1,0 +1,13 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+
+}
+
+.layout-transparent {
+	background: url('../images/jumbotron_image_1.jpg') center / cover;
+}
+
+.layout-transparent .mdl-layout__header, .layout-transparent {
+	color: white;
+}
