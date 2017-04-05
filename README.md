@@ -1,2 +1,2 @@
 # tomalama.github.io
-My resume website
+My personal website
