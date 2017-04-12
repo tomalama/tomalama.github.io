@@ -9,7 +9,7 @@ header {
 	padding: 20px 0;
 }
 
-header .row, footer.row {
+header .row {
 	display: flex;
 	align-items: center;
 }
@@ -21,12 +21,22 @@ header h1 {
 
 header nav {
 	display: flex;
+	align-items: center;
 	justify-content: flex-end;
 }
 
 header p {
 	padding: 0 20px;
 	margin: 0;
+	color: #000;
+}
+
+header a:not(.btn) p:hover {
+	color: #337ab7;
+}
+
+header a:hover {
+	text-decoration: none;
 }
 
 /* Jumbotron */
@@ -34,32 +44,14 @@ header p {
 .jumbotron {
 	display: flex;
 	align-items: center;
-	background-image: url("./images/jumbotron_image_1.jpg");
 	background-size: cover;
-	color: #ffffff;
-	height: 600px;
+	height: 400px;
 	text-shadow: 0.25px 0.25px 0.25px #000000;
 }
 
 .jumbotron h2 {
 	font-size: 60px;
 	font-weight: 700;
-	margin: 0;
-}
-
-.jumbotron h3 {
-	margin: 0 0 20px;
-}
-
-/* Content */
-
-section .row img {
-	margin: 0 0 30px;
-	width: 100%;
-}
-
-.col-md-6 {
-	margin: 0 0 30px;
 }
 
 /* Footer */
@@ -69,16 +61,18 @@ footer {
 	padding: 20px 0;
 }
 
-footer .col-sm-8 {
-	display: flex;
-	justify-content: flex-end;
-}
-
-footer ul {
-	list-style: none;
-}
-
 footer li img {
-	width: 32px;
-	height: 32px;
+	width: 35px;
+	height: 35px;
+	margin-left: 5px;
+	color: #337ab7;
+}
+
+footer li img:hover {
+	color: #337ab7;
+}
+
+footer div.row, footer div ul {
+	display: flex;
+	align-items: center;
 }
