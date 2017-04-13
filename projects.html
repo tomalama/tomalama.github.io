@@ -28,7 +28,7 @@
 				</div>
 			</div>
 		</nav>
-		<section class="jumbotron jumbotron-resume">
+		<section class="jumbotron jumbotron-projects">
 			<div class="container">
 				<div class="text-center">
 					<h2 class="wow fadeIn">Projects</h2>
@@ -36,16 +36,17 @@
 			</div>
 		</section>
 		<section class="container">
-			<div class="button-group filter-button-group">
-				<button data-filter="*">All</button>
-				<button data-filter=".web">Web</button>
-				<button data-filter=".unity">Unity</button>
-				<button data-filter=".cpp">C++</button>
-				<button data-filter=".android">Android</button>
+			<div class="button-group filter-button-group wow fadeIn">
+				<button class="filter-button" data-filter="*"><strong style="font-size: 17px;">All</strong></button>
+				<button class="filter-button" data-filter=".web"><img class="filter-icons" src="images/icon_web.png"></button>
+				<button class="filter-button" data-filter=".unity"><img class="filter-icons" src="images/icon_unity.png"></button>
+				<button class="filter-button" data-filter=".cpp"><img class="filter-icons" src="images/icon_cpp.png"></button>
+				<button class="filter-button" data-filter=".android"><img class="filter-icons" src="images/icon_android.png"></button>
 			</div>
-			<div class="projects">
+			<div class="projects wow fadeIn">
 				<div class="project web">
 					<h1 class="text-center">Personal Website</h1>
+					<img class="project-image" src="images/project_personalwebsite.png">
 					<p>A website that showcases my resume and projects.</p>
 					<strong>Technologies:</strong><p>HTML5, CSS3, JavaScript, jQuery, Bootstrap</p>
 					<strong>Development:</strong><p>03/2017 - Present</p>
@@ -62,8 +63,14 @@
 					<h1 class="text-center">VR Minigame Frenzy</h1>
 					<img class="project-image" src="images/project_vrminigamefrenzy.png">
 					<p>A collection of VR minigames developed for Android.</p>
-					<strong>Technologies:</strong><p>C#, Unity</p>
-					<strong>Development:</strong><p>04/2017 - Present</p>
+					<div class="col-sm-6">
+						<strong>Technologies:</strong><p>C#, Unity</p>
+						<strong>Development:</strong><p>04/2017 - Present</p>
+					</div>
+					<div class="col-sm-6">
+						<strong>Source:</strong>
+						<a href="https://github.com/tomalama/VR-Minigame-Frenzy">Repository</a>
+					</div>
 				</div>
 				<div class="project web">
 					<h1 class="text-center">CSPS Status Page</h1>

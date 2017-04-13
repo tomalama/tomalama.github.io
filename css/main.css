@@ -62,6 +62,11 @@ nav a:hover {
 	text-shadow: 0 0.5px 0.5px #000;
 }
 
+.jumbotron-projects {
+	background-image: url('../images/img_timeline_lakeplacid.jpg');
+	background-position: center bottom;
+}
+
 .jumbotron-resume {
 	background-image: url('../images/img_cottage.jpg');
 	background-position: center bottom;
@@ -104,7 +109,7 @@ nav a:hover {
 	margin: 1%;
 	border: 1px solid #000;
 	width: 48%; 
-	height: 500px;
+	height: 510px;
 }
 
 .project h1 {
@@ -114,10 +119,30 @@ nav a:hover {
 
 .project-image {
 	width: 100%;
+	margin-bottom: 10px;
 }
 
 .project div.col-sm-6 {
 	padding: 0;
+}
+
+.button-group {
+	margin-left: 10px;
+	margin-bottom: 25px;
+	display: flex;
+	align-items: center;
+}
+
+.filter-button {
+	background: none;
+	width: 40px;
+	height: 30px;
+	margin-right: 5px;
+}
+
+.filter-icons {
+	width: 24px;
+	height: 24px;
 }
 
 /* Footer */
