@@ -6,21 +6,30 @@
 		<title>Under Construction</title>
 		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
 
-		<link rel="stylesheet" type="text/css" href="css/resume.css">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet" type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/wow.min.js"></script>
 	</head>
 	<body>
-		<header class="container">
-			<div class="row">
-				<h1 class="col-sm-8">Tommy Nguyen</h1>
-				<nav class="col-sm-4">
-				</nav>
-			</div>
-		</header>
-		<section class="jumbotron">
+		<nav class="navbar navbar-fixed-top">
 			<div class="container">
-				<div class="text-center">
+				<div class="row">
+					<h1 class="title col-sm-8 wow fadeIn">Tommy Nguyen</h1>
+					<nav class="col-sm-4 wow fadeIn">
+						<a href="index.html"><p class="navlinks">Home</p></a>
+						<a href="projects.html"><p class="navlinks">Projects</p></a>
+						<a href="resume.html"><p class="navlinks">Resume</p></a>
+						<a class="btn btn-default" href="contact.html"><p class="navlinks2">Contact</p></a>
+					</nav>
+				</div>
+			</div>
+		</nav>
+		<section class="jumbotron jumbotron-construction">
+			<div class="container">
+				<div class="text-center wow fadeIn">
 					<h2>Under Construction</h2>
 					<h3>Please check back later.</h3>
 				</div>
@@ -30,7 +39,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-2 col-sm-offset-5">
-						<ul class="list-unstyled">
+						<ul class="list-unstyled wow fadeIn">
 							<li>
 								<a href="https://github.com/tomalama"><img src="images/github-icon.png"></a>
 							</li>
@@ -42,5 +51,10 @@
 				</div>
 			</div>
 		</footer>
+		<script type="text/javascript">
+			$(function(){
+  				new WOW().init(); 
+			});
+		</script>
 	</body>
 </html>
