@@ -13,7 +13,7 @@
 		<script src="js/jquery-3.1.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/wow.min.js"></script>
-		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+		<script src="js/isotope.pkgd.min.js"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-fixed-top">
@@ -165,13 +165,20 @@
 		</footer>
 		<script type="text/javascript">
 			$(function(){
+
   				new WOW().init(); 
+  				
+  				// init Isotope
+				var $projects = $('.projects').isotope({
+  					// options
+  					itemSelector: '.project',
+  					layoutMode: 'masonry'
+				});
+
 			});
 
-			var jumboHeight = $('.jumbotron').outerHeight(),
-       		navHeight = $('.navbar').outerHeight(),
-       		currentHeight = $(this).scrollTop();
-       		if (currentHeight >= jumboHeight - navHeight) {
+			var currentHeight = $(this).scrollTop();
+       		if (currentHeight > 0) {
        			$(".header").removeClass("wow");
   			}
   			
@@ -188,13 +195,6 @@
   					$(".title").css("color", "#fff");
   					$(".navlinks").css("color", "#fff");
   				}
-			});
-
-			// init Isotope
-			var $projects = $('.projects').isotope({
-  				// options
-  				itemSelector: '.project',
-  				layoutMode: 'masonry'
 			});
 
 			// filter items on button click

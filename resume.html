@@ -195,10 +195,8 @@
   				new WOW().init(); 
 			});
 
-			var jumboHeight = $('.jumbotron').outerHeight(),
-       		navHeight = $('.navbar').outerHeight(),
-       		currentHeight = $(this).scrollTop();
-       		if (currentHeight >= jumboHeight - navHeight) {
+			var currentHeight = $(this).scrollTop();
+       		if (currentHeight > 0) {
        			$(".header").removeClass("wow");
   			}
   			
