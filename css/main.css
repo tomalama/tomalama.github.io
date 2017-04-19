@@ -11,7 +11,7 @@ nav {
 	background:none;
 }
 
-nav .row {
+nav .header {
 	display: flex;
 	align-items: center;
 }
@@ -109,7 +109,7 @@ nav a:hover {
 	margin: 1%;
 	border: 1px solid #000;
 	width: 48%; 
-	height: 510px;
+	height: auto;
 }
 
 .project h1 {
@@ -176,4 +176,8 @@ footer div div.row, footer div ul {
 
 footer div ul {
 	margin: 0;
+}
+
+.center {
+	margin: 0 auto;
 }
