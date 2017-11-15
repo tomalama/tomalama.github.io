@@ -1,192 +1,103 @@
-/* General */
-
-html {
-    overflow-y:scroll;
+/* For Mobiles */
+.grid-item {
+	width: 100%;
+	height: fit-content;
+	margin-bottom: 2%;
 }
 
-.wow {
-	visibility: hidden;
+/* Small */
+@media (min-width: 600px) {
+
+.grid-item {
+	width: 45%;
+	height: fit-content; 
+	margin: 0.5%;
 }
 
-/* Header */
-
-nav {
-	padding: 10px 0;
-	background:none;
 }
 
-nav .header {
-	display: flex;
-	align-items: center;
+/* Medium */
+@media (min-width: 767px) {
+
+.grid-item {
+	width: 31%;
+	height: fit-content; 
+	margin: 0.5%;
 }
 
-nav h1 {
-	font-weight: 700;
+}
+
+/* Large*/
+@media (min-width: 991px) {
+
+.grid-item {
+	width: 23%;
+	height: fit-content; 
+	margin: 0.5%;
+}
+
+}
+
+/* Color scheme */
+:root {
+  --primary-color: #00A5AF;
+  --accent-color: #FFA5AF;
+  --font-light: #F5F5F5;
+  --font-medium: #A1B0B0;
+  --font-dark: #768F8F;
+}
+
+html, body {
+	overflow-x: hidden;
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+}
+
+#search-div {
+	width: fit-content;
+	height: fit-content;
+
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.center-fixed {
+	position: fixed;
+	margin: auto;
+}
+
+.top {
+	position: relative;
+	margin: 2% auto;
+}
+
+#intro-hello {
+	font-size: 2em;
 	margin: 0;
-	color: #fff;
-	text-shadow: 0 0.5px 0.5px #000;
 }
 
-nav nav {
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-}
-
-.navlinks {
-	font-size: 16px;
-	font-weight: 700;
-	padding: 0 20px;
-	margin: 0;
-	color: #fff;
-}
-
-.navlinks2 {
-	font-size: 16px;
-	font-weight: 700;
-	padding: 0 20px;
-	margin: 0;
-	color: #fff;
-}
-
-nav a.btn p {
-	color: #000;
-}
-
-nav a:hover {
-	text-decoration: none;
-}
-
-/* Jumbotron */
-
-.jumbotron {
-	display: flex;
-	align-items: center;
-	background-size: cover;
-	height: 450px;
-	text-shadow: 0 0.5px 0.5px #000;
-}
-
-.jumbotron-projects {
-	background-image: url('../images/img_timeline_lakeplacid.jpg');
-	background-position: center bottom;
-}
-
-.jumbotron-resume {
-	background-image: url('../images/img_cottage.jpg');
-	background-position: center bottom;
-}
-
-.jumbotron-contact {
-	background-image: url('../images/img_fire.jpg');
-	background-position: center center;
-}
-
-.jumbotron-construction {
-	background-image: url('../images/img_fire.jpg');
-	background-position: center center;
-}
-
-.jumbotron h2 {
-	color: #fff;
-	font-size: 60px;
-	font-weight: 700;
-}
-
-.jumbotron h3 {
-	color: #fff;
-	text-shadow: 0.5px 0.5px 0.5px #000;
-}
-
-.jumbotron h3 a{
-	color: #fff;
-}
-
-/* Content */
-
-.page-header {
-	border-bottom: 1px solid #000;
-}
-
-/* Isotope */
-
-.projects {
-	min-height: 400px;
-}
-
-.project {
-	margin: 1%;
-	border: 1px solid #000;
-	width: 48%; 
-	height: 520px;
-}
-
-.project h1 {
-	margin: 0;
-	border-bottom: 1px solid #000;
-}
-
-.text-content {
-	padding-left: 3px;
+#search {
+	border: 0;
+	outline: none;
+	font-size: 2em;
 }
 
 .project-image {
-	width: 100%;
-	margin-bottom: 10px;
+	width: 318px;
+	height: 180px;
 }
 
-.project div.col-sm-6 {
+.no-style-list {
+	list-style-type: none;
 	padding: 0;
 }
 
-.button-group {
-	margin-left: 10px;
-	margin-bottom: 25px;
-	display: flex;
-	align-items: center;
-}
-
-.filter-button {
-	background: none;
-	width: 40px;
-	height: 30px;
+.fa {
+	margin-left: 5px;
 	margin-right: 5px;
-}
-
-.filter-icons {
-	width: 24px;
-	height: 24px;
-}
-
-/* Footer */
-
-footer {
-	margin-top: 30px;
-	background-color: #e7e7e7;
-	font-size: 12px;
-	padding: 20px 0;
-}
-
-footer li img {
-	width: 35px;
-	height: 35px;
-	margin-right: 5px;
-	color: #337ab7;
-}
-
-footer li img:hover {
-	color: #337ab7;
-}
-
-footer div div.row, footer div ul, section.container div.contact{
-	display: flex;
-	align-items: center;
-}
-
-footer div ul {
-	margin: 0;
-}
-
-.center {
-	margin: 0 auto;
 }
