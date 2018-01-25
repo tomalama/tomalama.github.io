@@ -16,7 +16,7 @@ $(document).ready(function() {
     // init Isotope
     var $grid = $('.grid').isotope({
         itemSelector: '.grid-item',
-        layoutMode: 'masonry',
+        layoutMode: 'fitRows',
         filter: function() {
             return qsRegex ? $(this).text().match( qsRegex ) : true;
         },
@@ -44,7 +44,7 @@ $(document).ready(function() {
         }
     }, 50 ) );
 
-    window.setTimeout(function cycle() { 
+    window.setTimeout(function cycle() {
         var placeholder = placeholders.shift();
         $('#search').attr('placeholder', placeholder);
         placeholders.push(placeholder);
